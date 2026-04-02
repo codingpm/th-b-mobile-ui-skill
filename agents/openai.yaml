@@ -1,0 +1,4 @@
+interface:
+  display_name: "TH B Mobile UI Skill"
+  short_description: "Generate enterprise mobile UI prototypes with structured app patterns"
+  default_prompt: "Use $th-b-mobile-ui-skill to design a mobile enterprise prototype with compact spacing, clear action hierarchy, grouped content, and practical app-style interactions."
