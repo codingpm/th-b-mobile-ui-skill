@@ -9,15 +9,47 @@ Generate mobile interfaces that feel structured, practical, and product-ready ra
 
 Treat this skill as a mobile UI rules layer. Reproduce mobile page structure, component semantics, visual hierarchy, and interaction patterns through reusable guidance rather than any specific unpublished implementation.
 
+## Input Sufficiency Check
+
+Before generating a mobile prototype, first check whether the request contains enough information to support a strong mobile screen structure.
+
+Important inputs include:
+
+- platform
+- screen type
+- target users
+- business object
+- core goal or task
+- key actions
+- key information blocks
+- constraints or usage context
+
+If several of these are missing, do not jump directly into screen generation. First switch to clarification mode.
+
+When available, follow the intake behavior used by `demo-intake-skill`.
+If that skill is not available, apply the same clarification behavior locally:
+
+- ask one question at a time
+- base each next question on the user's latest answer
+- ask no more than 8 questions
+- stop once the key structure is sufficiently clear
+- summarize the result as a structured requirement brief before generating
+
+If the request is already sufficiently clear and the platform is mobile, proceed directly to generation.
+
 ## Workflow
 
 Follow this sequence:
 
-1. Identify the mobile page type.
-2. Infer the dominant content pattern.
-3. Apply mobile layout, spacing, and interaction rules.
-4. Generate the prototype in the requested format.
-5. Briefly self-check that the result still feels like a usable mobile product page.
+1. Check whether the request is complete enough for mobile screen generation.
+2. If not, clarify the requirement through short guided questioning.
+3. Convert the result into a structured requirement brief.
+4. Confirm the platform is mobile.
+5. Identify the mobile page type.
+6. Infer the dominant content pattern.
+7. Apply mobile layout, spacing, and interaction rules.
+8. Generate the prototype in the requested format.
+9. Briefly self-check that the result still feels like a usable mobile product page.
 
 If requirements are incomplete, infer the most likely mobile pattern instead of blocking:
 
